@@ -1,0 +1,443 @@
+*{
+    list-style: none;
+    /* 목록 점 없애는 기능 */
+    text-decoration: none;
+    /* 색,밑줄 x */
+    border-collapse: collapse;
+    /* table 선 붙여주는 기능 */
+    margin: 0px;
+    padding: 0px;
+    color: #000;
+}
+
+
+.intro_bg{
+    /* 이미지 */
+    width: 100%; 
+    height: 718px;
+    /* width: 2000px;
+    height: 718px; */
+    /* margin-left: 270px;
+    margin-top: 0px; */
+    /* padding-top: 400px; */
+    /* padding-bottom: 200px; */
+    background-image:url("computer3.jpg")
+}
+
+
+.header{
+    /* 메뉴 배경 */
+    display: flex;
+    /* 가로 지정 */
+    width: 1280px;
+    margin: auto;
+    height: 86px;
+}
+
+.searchArea{
+    /* 감싸고 있는 영역 */
+    width: 300px;
+    height: 40px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    /* 모서리 둥글기 */
+    margin-top: 24px;
+}
+
+.searchArea > form > input{
+    /* input 은 입력 필드 */
+    border:none;
+    /* border 은 테두리 */
+    width: 250px;
+    height: 40px;
+    background: none;
+    color: #000;
+    padding-left: 10px;
+}
+
+.searchArea > form > ::placeholder{
+    color: #474747;
+}
+
+.searchArea > form > span{
+    width: 50px;
+    color: #949494;
+    font-weight: bold;
+    cursor: pointer;
+}
+.nav{
+    /* 메뉴 가로 지정 */
+    display: flex;
+    justify-content: flex-end;
+    /* 레이아웃 재정렬 함수 (flex box) */
+    line-height: 86px;
+    /* 줄간격 */
+    width: calc(1280px - 300px);
+    /*  Calculator 계산 함수 */
+}
+
+.nav > li > a{
+    color: #000;
+}
+
+.nav > li{
+    /* 메뉴 간격 */
+    margin-left: 84px;
+    color: white;
+}
+
+/* [[[@@@중앙 텍스트]]] */
+
+.intro_text{
+    width: 100;
+    margin: 231px auto 231px auto;
+    /* auto 는 수평방향 값을 자동으로 설정 */
+    /* 상 / 우 / 하 / 좌 */
+    text-align: center;
+    /* 텍스트 중간 배열로 맞춤 */
+    
+}
+
+
+.intro_text > h1{
+    color: #9e9e9e;
+    font-size: 48px;
+    font-weight: 100;
+}
+.contents1{
+    font-size: 20px;
+    font-weight: lighter;
+    /* 텍스트 굵기 */
+}
+
+.contents2{
+    font-size: 14px;
+    font-weight: 100;
+}
+
+.contents3{
+    font-size: 14px;
+    font-weight: 100; /* 두께 수치 (픽셀x) */
+}
+
+.contents4{
+    /* font-weight: normal; */
+    font-size: 15px;
+    letter-spacing: 1px;
+    line-height: 30px;
+    /* text-shadow: 1px 1px #000; */
+}
+
+.contents1_bold{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.result{
+    font-size: 24px;
+}
+
+.intro_text > h2{
+    color:#9e9e9e;
+}
+
+/* [[[@@@중앙 메뉴]]] */
+.amoun{
+    width: 1280px;
+    background: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    /* 그림자 ( 좌/우 , 하 , 흐림 ) */
+    display: flex;
+    margin-left: 620px;
+    position: relative;
+    /* 현재위치 */
+    top: -66px;
+    height: 132px;
+}
+
+.amoun > li{
+    flex: 1;
+    /* 자식요소 분배 */
+}
+
+.amoun > li > div{
+    text-align: center;
+    height: 57px;
+    margin-top: 37px;
+}
+
+.amoun > li:not(:last-child) > div{
+    /* 오른쪽 선 디자인 */
+    border-right: 1px solid rgb(221, 221, 221);
+
+}
+
+/* .main_text0 */
+
+.main_text0{
+    width: 100%;
+    height: 601px;
+    margin-top: -132px;
+    background: #f1f2f3;
+}
+.main_text0 > h1{
+    padding-top: 116px;
+    text-align: center;
+    font-size: 50px;
+    font-weight:lighter;
+}
+
+.main_text0 > .contents1{
+    text-align: center;
+}
+/* or = .main_text0 > h2{ */
+    /* text-align: center; */
+    /* font-weight: lighter; */
+/* } */
+
+.icons{   /* 두번째 메뉴 */
+    display: flex; /* 3분할 */
+    width: 1280px;
+    height: 302px;
+    /* background: orange; */
+    margin: auto;
+}
+
+.icons > li {
+    flex: 1; /* 분할 */
+    background: white;
+    height: 302px;  
+    margin-top: 44px;
+    text-align: center;
+}
+
+.icons > li:not(:last-child){ /* 여백 */
+    margin-right: 20px;
+}
+
+.icons > li > .icon_img{ /* 메뉴 1 */
+    margin-top: 36px;
+}
+
+.icons .contents3 { /* icons 안에 있는 contents 함수들에게 모두 적용 */
+    margin: auto;
+    width: 180px;
+    /* letter-spacing: 1px; (글자 간격)  */
+}
+
+.icons .contents2 {
+    margin: auto;
+    width: 200px;
+}
+
+.more{
+    display: flex;
+    color: white;
+    font-size: 13px;
+    width: 100px;
+    height: 30px;
+    font-weight: lighter;
+    background: rgb(75, 123, 253);
+    margin: 15px auto auto auto;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.more2{
+    display: flex;
+    color: white;
+    font-size: 13px;
+    width: 100px;
+    height: 30px;
+    font-weight: lighter;
+    background: rgb(75, 123, 253);
+    margin: 30px auto auto auto;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+}
+
+.more3{
+    display: flex;
+    color: white;
+    font-size: 13px;
+    width: 100px;
+    height: 30px;
+    font-weight: lighter;
+    background: rgb(75, 123, 253);
+    margin: 11px auto auto auto;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+}
+
+/* main_text0 end */
+
+/* Favorite text */
+
+.main_text1{
+    width: 100%;
+    height: 459px;
+    background: rgb(215, 196, 250);
+    margin-top: 0px;
+}
+
+.main_text1 > h1{
+    text-align: center;
+    font-size: 48px;
+    font-weight: lighter;
+    padding-top: 75px;
+}
+
+.main_text1 > .contents1{
+    text-align: center;
+    font-weight: normal;
+}
+
+.introduction{ /* future */
+    display: flex;
+    width: 1280px;
+    height: 427px;
+    /* background: greenyellow; */
+    margin: 49px auto;
+}
+
+.future_photo > img {
+    width: 540px;
+    height: 427px;
+    padding-left: 40px;
+}
+
+.introduction > .contents2{
+    padding: 20px;
+    padding-left: 80px;
+    text-shadow: 1px 4px #7a7a7a;
+}
+
+.introduction > .contents2 > h2{
+    margin-bottom: 20px;
+}
+
+
+.main_text2{ /* hobby background */
+    background: skyblue;
+    margin-top: 0px;
+    height: 370px;
+    width: 100%
+}
+
+
+.introduction2{ /* hobby */
+    display: flex;
+    width: 1280px;
+    height: 427px;
+    /* background: greenyellow; */
+    margin: 20px auto;
+}
+
+.fashion_photo > img {
+    width: 500px;
+    height: 427px;
+    padding-left: 60px;
+}
+
+.introduction2 > .contents2{
+    padding: 80px;
+    padding-left: 100px;
+    text-shadow: 1px 4px #717171;
+}
+.introduction2 > .contents2 > h2{
+    margin-bottom: 20px;
+}
+/* introduction end */
+
+
+
+/* main_text3 / CONTACT */
+.main_text3{
+    width: 100%;
+    height: 410px;
+    background: rgb(255, 255, 255);
+    margin-top: 55px;
+}
+
+.contact_photo{
+    width: 1920px;
+    height: 418px;
+    margin-left: 280px;
+    background-image: url("contact.png");
+}
+
+/* .contact_photo > img{
+    width: 1920px;
+    height: 418px;
+    padding-left: 260px;
+    /* padding-top: 20px;
+} */
+
+.main_text3 > .contact_photo >.contents1_bold{
+    font: normal normal 100 48px/57px 'Candara';  
+    opacity: 1;
+    color: #ececec;
+    padding-top:138px;
+    padding-left:381px;
+}
+
+.main_text3 > .contact_photo >.contents1{
+    font: normal normal 300 20px/24px 'Candara';  
+    opacity: 1;
+    color: #ececec;
+    padding-top: 10px;
+    padding-left: 270px;
+}
+
+.main_text3 > .contact_photo >.more{
+    font-size: 15px;
+    font-weight:bold;
+    width: 220px;
+    height: 40px;
+    border-radius: none;
+    border:1px solid #fff;
+    background: transparent;
+    margin-left: 370px;
+    margin-top: 20px;
+}
+
+/* main_text3 end */
+
+/* main_text4 LOGO */
+
+.main_text4{
+    width: 1920px;
+    height: 244px;
+    background:#1F1F1F;
+    margin-left: 280px;
+    margin-top: 8px;
+}
+
+.main_text4 > .contents1_bold{
+    text-align: left;
+    color: #f1f2f3;
+    padding-top: 95px;
+    padding-left: 320px;
+    font: normal normal 100 48px/57px 'Candara';
+}
+
+.main_text4> .contents1{
+    text-align: left;
+    margin-top: -100px;
+    margin-left: 645px;
+    color: #fff;
+    font: normal normal 100 20px/40px 'Candara';
+}
+
+
+/* main_text4 end */
+
+.end{
+    width: 100%;
+    height: 500px;
+}
+/* endf */
